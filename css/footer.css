@@ -1,0 +1,31 @@
+/* =========================
+   ФУТЕР
+   ========================= */
+footer {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.share-buttons {
+  margin: 20px 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.share-buttons a svg {
+  transition: transform 0.15s, box-shadow 0.15s;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+.share-buttons a:hover svg {
+  transform: scale(1.12);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.share-buttons span {
+  font-size: 1em;
+  margin-right: 8px;
+  color: #444;
+}

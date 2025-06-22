@@ -1,0 +1,50 @@
+/* =========================
+   HELPERS (специфические вспомогательные классы)
+   ========================= */
+
+/* Применить быстрый box-shadow */
+.box-shadow {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08) !important;
+}
+
+.rounded {
+  border-radius: 8px !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important;
+}
+
+/* Быстрое оформление для кнопок */
+.btn {
+  display: inline-block;
+  padding: 8px 18px;
+  color: #fff;
+  background: #1976d2;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.22s;
+  text-decoration: none;
+}
+.btn:hover, .btn:focus {
+  background: #0047ab;
+}
+
+/* Быстрое задание flex-контейнера */
+.flex {
+  display: flex !important;
+}
+.flex-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}

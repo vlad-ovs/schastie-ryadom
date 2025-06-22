@@ -1,0 +1,71 @@
+/* =========================
+   ПОИСК
+   ========================= */
+#search-results {
+  margin-top: 20px;
+}
+.search-result {
+  padding: 12px;
+  border-bottom: 1px solid #ececec;
+}
+.search-result a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+
+.search-link-bar {
+  background: #fff;
+  border: 1px solid #e2e7ed;
+  border-radius: 32px;
+  box-shadow: 0 1px 3px #0001;
+  display: flex;
+  align-items: center;
+  height: 46px;
+  width: 340px;
+  cursor: pointer;
+  transition: box-shadow .2s, border-color .2s;
+  padding: 0 18px;
+}
+.search-link-bar:hover, .search-link-bar:focus {
+  box-shadow: 0 2px 14px #1769aa22;
+  border-color: #bcd6ec;
+  background: #f9fafe;
+}
+.search-link-bar .search-icon {
+  font-size: 1.4em;
+  color: #8d929a;
+  margin-right: 10px;
+  pointer-events: none;
+}
+.search-link-bar .search-placeholder {
+  color: #8d929a;
+  font-size: 1.08em;
+  font-family: inherit;
+  pointer-events: none;
+  user-select: none;
+}
+
+.search-container {
+  width: 100%;
+  text-align: center;
+  margin: 32px 0 16px 0;
+}
+
+#site-search {
+  width: 340px;
+  padding: 10px 18px;
+  font-size: 1.15rem;
+  border-radius: 16px;
+  border: 1px solid #e2e7ed;
+  box-shadow: 0 1px 3px #0001;
+  background: #fff;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  outline: none;
+}
+
+#site-search:focus,
+#site-search:hover {
+  box-shadow: 0 2px 14px #1769aa22;
+  border-color: #bcd6ec;
+  background: #f9fafe;
+}

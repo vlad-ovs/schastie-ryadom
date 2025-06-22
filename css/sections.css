@@ -1,0 +1,57 @@
+/* =========================
+   СЕКЦИИ И ДОП. ЭЛЕМЕНТЫ
+   ========================= */
+.section-description {
+  margin-top: 10px;
+  color: #3b3b3b;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.section-content {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  color: #0047ab;
+  font-size: 1.5rem;
+}
+
+.popular-list {
+  margin: 20px 0 0 20px;
+  font-size: 1.15rem;
+}
+.popular-list li {
+  margin-bottom: 8px;
+}
+
+.quote-block {
+  margin-top: 40px;
+  background: #fffbe6;
+  border-left: 4px solid #ffd66b;
+  padding: 20px;
+  font-size: 1.13rem;
+}
+
+/* =========================
+   Сброс маркеров для списков
+   ========================= */
+main > ul:first-child,
+main > ol:first-child {
+  display: none !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+main ul, main ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main ::marker {
+  display: none !important;
+  color: transparent !important;
+  font-size: 0 !important;
+}

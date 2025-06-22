@@ -1,0 +1,122 @@
+/* =========================
+   БАННЕРЫ И АДАПТИВНОСТЬ
+   ========================= */
+.banner {
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.banner--large { height: 401px; }
+.banner--medium { height: 320px; }
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-title-group {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.banner-title {
+  padding: 20px 60px;
+  background: rgba(24, 103, 64, 0.40);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.5px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  min-width: 200px;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+  margin-bottom: 14px;
+}
+
+.banner-subtitle {
+  padding: 10px 32px;
+  background: rgba(24, 103, 64, 0.25);
+  color: #fff;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.8px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+  backdrop-filter: blur(1px);
+}
+
+@media (max-width: 900px) {
+  .banner--large { height: 180px; }
+  .banner--medium { height: 120px; }
+  .banner-title-group {
+    top: 67%;
+  }
+  .banner-title {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 10px;
+    min-width: 90px;
+    margin-bottom: 10px;
+  }
+  .banner-subtitle {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    border-radius: 7px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner--large { height: 160px; }
+  .banner--medium { height: 120px; }
+  .banner-title-group {
+    top: 70%;
+  }
+  .banner-title {
+    font-size: 0.92rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    min-width: 50px;
+    margin-bottom: 7px;
+  }
+  .banner-subtitle {
+    font-size: 0.75rem;
+    padding: 3px 5px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-title-group {
+    top: 70%;
+  }
+  .banner-title {
+    font-size: 0.98rem;
+    padding: 3px 7px;
+    background: rgba(24, 103, 64, 0.32);
+    border-radius: 7px;
+    margin-bottom: 7px;
+  }
+  .banner-subtitle {
+    font-size: 0.75rem;
+    padding: 2.5px 6px;
+    background: rgba(24, 103, 64, 0.27);
+    border-radius: 5px;
+  }
+}

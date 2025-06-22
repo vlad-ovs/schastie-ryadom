@@ -1,0 +1,39 @@
+/* =========================
+   ХЕДЕР
+   ========================= */
+.main-header {
+  background-color: #ffd66b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 40px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1100;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  font-size: 1.4em;
+  gap: 0.25em;
+}
+
+.logo-title:hover,
+.logo-title:focus {
+  color: #1976d2;
+}
+
+.logo-emoji {
+  font-size: 2em;
+  margin-right: 0;
+}
+
+.site-title {
+  font-size: 20px;
+  font-weight: bold;
+}

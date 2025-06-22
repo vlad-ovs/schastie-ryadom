@@ -1,0 +1,47 @@
+/* =========================
+   УТИЛИТАРНЫЕ КЛАССЫ (helpers, utilities)
+   ========================= */
+
+/* Скрыть элемент визуально, но оставить для скринридеров */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Скрыть элемент полностью */
+.hidden {
+  display: none !important;
+}
+
+/* Выровнять по центру */
+.text-center {
+  text-align: center !important;
+}
+
+/* Добавить margin */
+.mt-1 { margin-top: 8px !important; }
+.mt-2 { margin-top: 16px !important; }
+.mt-3 { margin-top: 24px !important; }
+.mb-1 { margin-bottom: 8px !important; }
+.mb-2 { margin-bottom: 16px !important; }
+.mb-3 { margin-bottom: 24px !important; }
+
+/* Быстрое скрытие скроллбаров */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Webkit */
+}
+
+/* Для быстрого задания ширины/высоты */
+.w-100 { width: 100% !important; }
+.h-100 { height: 100% !important; }
