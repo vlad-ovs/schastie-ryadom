@@ -1,0 +1,47 @@
+[
+  {
+    "title": "10 шагов к счастью",
+    "description": "Пошаговое руководство к радостной жизни",
+    "url": "/schastje/article1.php"
+  },
+  {
+    "title": "Как сохранять радость каждый день",
+    "description": "Советы и практики на каждый день",
+    "url": "/schastje/article2.php"
+  },
+  {
+    "title": "Практики благодарности",
+    "description": "Лучшие упражнения для осознанности",
+    "url": "/schastje/practices.php"
+  },
+  {
+    "title": "Лучшие книги о счастье",
+    "description": "Рекомендации для чтения",
+    "url": "/schastje/books.php"
+  },
+  {
+    "title": "Афоризмы о счастье",
+    "description": "Вдохновляющие цитаты",
+    "url": "/schastje/aphorisms.php"
+  },
+  {
+    "title": "Любовь",
+    "description": "Любовь — основа гармоничной жизни, советы и практики.",
+    "url": "/love/index.php"
+  },
+  {
+    "title": "Семья",
+    "description": "Семья — поддержка и опора на жизненном пути.",
+    "url": "/semia/index.php"
+  },
+  {
+    "title": "Дети",
+    "description": "Дети — источник радости и вдохновения.",
+    "url": "/deti/index.php"
+  },
+  {
+    "title": "Здоровье",
+    "description": "Здоровье — важная составляющая счастья.",
+    "url": "/zdorovie/index.php"
+  }
+]

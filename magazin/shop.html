@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин — Бумажные и электронные книги</title>
+  <meta name="viewport" content="width=devic e-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Небольшие доп. стили для магазина */
+    .shop-section {
+      max-width: 900px;
+      margin: 0 auto 48px auto;
+      padding: 0 16px;
+    }
+    .shop-title {
+      color: #0047ab;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: bold;
+      margin: 32px 0 16px 0;
+    }
+    .shop-description {
+      text-align: center;
+      font-size: 1.15rem;
+      color: #444;
+      margin-bottom: 36px;
+    }
+    .shop-products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+    }
+    .shop-card {
+      background: #fffbe6;
+      border: 1px solid #ffe082;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(255, 214, 107, 0.13);
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #0047ab;
+      transition: box-shadow 0.22s, background 0.18s, transform 0.19s;
+      padding: 18px 12px 16px 12px;
+    }
+    .shop-card:hover, .shop-card:focus {
+      background: #ffe082;
+      box-shadow: 0 8px 32px rgba(255, 214, 107, 0.18);
+      color: #000;
+      transform: translateY(-4px) scale(1.025);
+      z-index: 2;
+    }
+    .shop-card img {
+      width: 110px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 14px #ffe08233;
+      background: #eee;
+      display: block;
+    }
+    .shop-card-title {
+      font-size: 1.15rem;
+      font-weight: bold;
+      margin: 10px 0 6px 0;
+      text-align: center;
+    }
+    .shop-card-author {
+      font-size: 1rem;
+      color: #888;
+      margin-bottom: 10px;
+      text-align: center;
+      min-height: 24px;
+    }
+    .shop-card-desc {
+      font-size: 0.98rem;
+      color: #444;
+      text-align: center;
+      margin-bottom: 12px;
+      min-height: 42px;
+    }
+    .shop-card-buttons {
+      margin-top: auto;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+    .shop-btn {
+      background: #1976d2;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 18px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.18s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .shop-btn:hover, .shop-btn:focus {
+      background: #1256a3;
+      color: #fff;
+      text-decoration: none;
+    }
+    @media (max-width: 700px) {
+      .shop-products { gap: 12px; }
+      .shop-card { width: 98%; min-width: 200px; }
+    }
+    @media (max-width: 480px) {
+      .shop-title { font-size: 1.4rem; }
+      .shop-description { font-size: 1rem; }
+      .shop-card { padding: 12px 6px; }
+      .shop-card img { width: 85px; height: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <a href="/" class="logo-title">
+      <span class="logo-emoji">😊</span>
+      <span class="site-title">Счастье рядом</span>
+    </a>
+    <!-- Навигация добавь при необходимости -->
+  </header>
+  <main>
+    <section class="shop-section">
+      <h1 class="shop-title">Магазин — Бумажные и электронные книги</h1>
+      <div class="shop-description">
+        Здесь вы найдёте подборку книг о счастье, саморазвитии и вдохновении — в бумажном и электронном формате.<br>
+        Все книги можно приобрести через наших партнёров. <br>
+        <span style="font-size:0.95em; color:#888;">Покупая по ссылкам, вы поддерживаете наш проект!</span>
+      </div>
+      <div class="shop-products">
+        <!-- Пример карточки товара -->
+        <div class="shop-card">
+          <img src="https://cdn.img-book.ru/covers/1000/9785171462342.jpg" alt="Обложка: Сила настоящего">
+          <div class="shop-card-title">Сила настоящего</div>
+          <div class="shop-card-author">Экхарт Толле</div>
+          <div class="shop-card-desc">Культовая книга о поиске счастья и осознанности. Практики для жизни здесь и сейчас.</div>
+          <div class="shop-card-buttons">
+            <a href="https://www.litres.ru/eckhart-tolle/sila-nastoyaschego/" class="shop-btn" target="_blank">Электронная</a>
+            <a href="https://www.labirint.ru/books/908054/" class="shop-btn" target="_blank">Бумажная</a>
+          </div>
+        </div>
+        <div class="shop-card">
+          <img src="https://cdn.img-book.ru/covers/1000/9785171359321.jpg" alt="Обложка: Радикальное прощение">
+          <div class="shop-card-title">Радикальное прощение</div>
+          <div class="shop-card-author">Колин Типпинг</div>
+          <div class="shop-card-desc">Как отпустить обиды, полюбить себя и снова стать счастливым.</div>
+          <div class="shop-card-buttons">
+            <a href="https://www.litres.ru/kolin-tipping/radikalnoe-proshchenie/" class="shop-btn" target="_blank">Электронная</a>
+            <a href="https://www.labirint.ru/books/741290/" class="shop-btn" target="_blank">Бумажная</a>
+          </div>
+        </div>
+        <div class="shop-card">
+          <img src="https://cdn.img-book.ru/covers/1000/9785041177498.jpg" alt="Обложка: Привычка быть счастливым">
+          <div class="shop-card-title">Привычка быть счастливым</div>
+          <div class="shop-card-author">Светлана Бронникова</div>
+          <div class="shop-card-desc">Практическое руководство, как выработать привычку к радости и спокойствию.</div>
+          <div class="shop-card-buttons">
+            <a href="https://www.litres.ru/svetlana-bronnikova/privychka-byt-schastlivym/" class="shop-btn" target="_blank">Электронная</a>
+            <a href="https://www.labirint.ru/books/842331/" class="shop-btn" target="_blank">Бумажная</a>
+          </div>
+        </div>
+        <div class="shop-card">
+          <img src="https://cdn.img-book.ru/covers/1000/9785040978904.jpg" alt="Обложка: 100 способов изменить жизнь">
+          <div class="shop-card-title">100 способов изменить жизнь</div>
+          <div class="shop-card-author">Лариса Парфентьева</div>
+          <div class="shop-card-desc">Мотивирующая книга для поиска себя, вдохновения и новых возможностей.</div>
+          <div class="shop-card-buttons">
+            <a href="https://www.litres.ru/larisa-parfenteva/100-sposobov-izmenit-zhizn/" class="shop-btn" target="_blank">Электронная</a>
+            <a href="https://www.labirint.ru/books/596560/" class="shop-btn" target="_blank">Бумажная</a>
+          </div>
+        </div>
+        <!-- Добавляй новые карточки по аналогии -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>© 2025 Счастье рядом · Книги предоставлены партнёрами ЛитРес и Лабиринт</div>
+  </footer>
+</body>
+</html>

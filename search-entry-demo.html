@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Выбор поиска — Счастье рядом</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #222;
+    }
+    .main-header {
+      background: #fff;
+      border-bottom: 1px solid #ececec;
+      padding: 16px 0;
+      text-align: center;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 6px #0001;
+    }
+    .search-options-container {
+      max-width: 420px;
+      margin: 48px auto 32px;
+      padding: 24px 32px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px #0002;
+      text-align: center;
+    }
+    .search-options-container h2 {
+      font-size: 1.5em;
+      margin-bottom: 12px;
+      color: #1769aa;
+    }
+    .search-choice-list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      margin: 18px 0 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .search-choice-list li {
+      background: #f5fafd;
+      border: 1px solid #dde8ef;
+      border-radius: 12px;
+      padding: 18px;
+      transition: box-shadow .2s;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      box-shadow: 0 1px 5px #0001;
+    }
+    .search-choice-list li:hover {
+      box-shadow: 0 6px 18px #1769aa22;
+      border-color: #bcd6ec;
+      background: #e6f0fa;
+    }
+    .search-icon {
+      font-size: 2em;
+      transition: transform .2s;
+    }
+    .search-choice-list li:hover .search-icon {
+      transform: scale(1.15);
+    }
+    .search-title {
+      font-weight: bold;
+      font-size: 1.08em;
+      color: #1769aa;
+    }
+    .search-desc {
+      font-size: .98em;
+      color: #333;
+      margin-top: 2px;
+    }
+    @media (max-width:600px) {
+      .search-options-container {
+        padding: 16px 4vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-header">
+    <span class="logo-emoji" style="font-size:1.6em;margin-right:.3em;">😊</span>
+    <span>Счастье рядом</span>
+  </div>
+  <div class="search-options-container">
+    <h2>Выберите тип поиска</h2>
+    <ul class="search-choice-list">
+      <li onclick="location.href='/search.php'">
+        <span class="search-icon">🔍</span>
+        <div>
+          <div class="search-title">Поиск по всему сайту</div>
+          <div class="search-desc">Ищет материалы во всех разделах и статьях сайта. Рекомендуется, если не знаете, где искать.</div>
+        </div>
+      </li>
+      <li onclick="scrollToPageSearch()">
+        <span class="search-icon">📄</span>
+        <div>
+          <div class="search-title">Поиск по этой странице</div>
+          <div class="search-desc">Позволяет быстро найти нужную карточку среди материалов на текущей странице.</div>
+        </div>
+      </li>
+    </ul>
+    <div id="page-search-demo" style="display:none;margin-top:42px;">
+      <label for="demo-site-search" style="font-weight:bold;display:block;margin-bottom:10px;">Демонстрация поиска по странице:</label>
+      <input type="text" id="demo-site-search" placeholder="Начните вводить запрос..." style="width:90%;padding:9px 14px;font-size:1em;border-radius:7px;border:1px solid #bcd6ec;">
+      <ul id="demo-card-list" style="margin-top:18px;padding:0;list-style:none;">
+        <li class="demo-card">10 шагов к счастью — Пошаговое руководство к радостной жизни</li>
+        <li class="demo-card">Как сохранять радость каждый день — Советы и практики на каждый день</li>
+        <li class="demo-card">Практики благодарности — Лучшие упражнения для осознанности</li>
+        <li class="demo-card">Лучшие книги о счастье — Рекомендации для чтения</li>
+        <li class="demo-card">Афоризмы о счастье — Вдохновляющие цитаты</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    // Демонстрация поиска по странице
+    function scrollToPageSearch() {
+      const demo = document.getElementById('page-search-demo');
+      if (!demo) return;
+      demo.style.display = 'block';
+      demo.scrollIntoView({behavior: 'smooth', block: 'center'});
+      document.getElementById('demo-site-search').focus();
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      const input = document.getElementById('demo-site-search');
+      if (!input) return;
+      input.addEventListener('input', function () {
+        const q = this.value.trim().toLowerCase();
+        document.querySelectorAll('.demo-card').forEach(card => {
+          card.style.display = card.textContent.toLowerCase().includes(q) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
