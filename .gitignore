@@ -1,0 +1,72 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS panel / OpenServer / XAMPP / WAMP temp files
+*.log
+*.tmp
+*.bak
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# PHPStorm/JetBrains IDEs
+.idea/
+
+# VSCode
+.vscode/
+
+# Composer
+/vendor/
+composer.lock
+
+# PHPUnit
+phpunit.xml
+phpunit.result.cache
+
+# Env files
+.env
+.env.*
+
+# Coverage and reports
+coverage/
+*.cover
+
+# Build output
+/build/
+dist/
+
+# Personal scripts and test files
+copy-changed-to-ospanel*.ps1
+test.ps1
+
+# Examples and local test HTML (если не нужны в git)
+# examples/
+# *.example.html
+
+# Ignore OS, IDE, and backup files
+*.swp
+*.swo
+*~
+*.orig
+*.old
+
+# Ignore user uploads/cache if present
+uploads/
+.cache/
+
+# Ignore by extension
+*.log
+*.tmp
+
+# Ignore all hidden files at the repo root except .gitignore itself
+.*
+!.gitignore
