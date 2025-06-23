@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title><?= isset($pageTitle) ? $pageTitle : "Счастье рядом" ?></title>
- <!-- <link rel="stylesheet" href="/css/style.css"> -->
+  <!-- <link rel="stylesheet" href="/css/style.css"> -->
   <link rel="stylesheet" href="/css/reset.css">
 <link rel="stylesheet" href="/css/header.css">
 <link rel="stylesheet" href="/css/nav.css">
@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="/css/search.css">
 <link rel="stylesheet" href="/css/footer.css">
 <link rel="stylesheet" href="/css/typography-adaptive.css">
+<link rel="stylesheet" href="/css/biblioteka.css">
+<link rel="stylesheet" href="/css/sidebar.css">
   <!-- VK Open API для виджета комментариев -->
   <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
   <script type="text/javascript">

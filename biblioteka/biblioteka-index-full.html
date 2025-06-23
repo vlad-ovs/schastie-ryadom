@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Библиотека — Счастье рядом</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Подключение CSS-файлов -->
+  <link rel="stylesheet" href="/css/biblioteka.css">
+  <link rel="stylesheet" href="/css/sidebar.css">
+  <link rel="stylesheet" href="/css/cards.css">
+</head>
+<body>
+  <div class="library-container">
+    <!-- Хлебные крошки -->
+    <nav class="breadcrumbs" aria-label="breadcrumb">
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li><span aria-current="page">Библиотека</span></li>
+      </ul>
+    </nav>
+
+    <div class="main-with-sidebar">
+      <!-- Сайдбар -->
+      <aside class="sidebar">
+        <nav class="sidebar-menu">
+          <div class="sidebar-title">Разделы библиотеки</div>
+          <ul>
+            <li><a href="#read"><span class="sidebar-icon">📚</span> Прочитать</a></li>
+            <li><a href="#watch"><span class="sidebar-icon">🎬</span> Посмотреть</a></li>
+            <li><a href="#listen"><span class="sidebar-icon">🎧</span> Прослушать</a></li>
+            <li><a href="#categories"><span class="sidebar-icon">📖</span> Книги и статьи по темам</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-block">
+          <div class="sidebar-title">Советуем</div>
+          <ul>
+            <li><a href="#recommended-read"><span class="sidebar-icon">📚</span> Книги</a></li>
+            <li><a href="#recommended-watch"><span class="sidebar-icon">🎬</span> Фильмы</a></li>
+            <li><a href="#recommended-listen"><span class="sidebar-icon">🎧</span> Аудио</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Контент библиотеки -->
+      <section class="section-content">
+        <!-- Карточки-разделы -->
+        <section class="cards-section">
+          <div class="cards-list">
+            <a class="card" href="#read">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=Прочитать" alt="Иконка книги" class="card-img" />
+              <span class="card-icon">📚</span>
+              <div class="card-title">Прочитать</div>
+              <div class="card-desc">Книги и статьи для онлайн-чтения</div>
+            </a>
+            <a class="card" href="#watch">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=Посмотреть" alt="Иконка фильма" class="card-img" />
+              <span class="card-icon">🎬</span>
+              <div class="card-title">Посмотреть</div>
+              <div class="card-desc">Фильмы, видео и вдохновляющие сюжеты</div>
+            </a>
+            <a class="card" href="#listen">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=Прослушать" alt="Иконка аудио" class="card-img" />
+              <span class="card-icon">🎧</span>
+              <div class="card-title">Прослушать</div>
+              <div class="card-desc">Аудиокниги, лекции, медитации</div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Советуем прочитать -->
+        <section class="cards-section" id="recommended-read">
+          <h2 class="section-heading">Советуем прочитать</h2>
+          <div class="cards-list">
+            <a class="card" href="#">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=Огонь+в+сердце" alt="Обложка книги Огонь в сердце" class="card-img" />
+              <span class="card-icon">📘</span>
+              <div class="card-title">Огонь в сердце</div>
+              <div class="card-desc">— Дипак Чопра<br>Очень добрая, светлая и мудрая книга о человеческой душе.</div>
+            </a>
+            <a class="card" href="#">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=10+секретов" alt="Обложка книги Десять секретов счастья" class="card-img" />
+              <span class="card-icon">📗</span>
+              <div class="card-title">Десять секретов счастья</div>
+              <div class="card-desc">— Адам Джексон<br>Простые, но мудрые секреты, которые могут помочь каждому.</div>
+            </a>
+            <a class="card" href="#">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=Искусство+любить" alt="Обложка книги Искусство любить" class="card-img" />
+              <span class="card-icon">📙</span>
+              <div class="card-title">Искусство любить</div>
+              <div class="card-desc">— Эрих Фромм<br>Любовь — это активная заинтересованность в жизни и развитии другого.</div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Советуем посмотреть -->
+        <section class="cards-section" id="recommended-watch">
+          <h2 class="section-heading">Советуем посмотреть</h2>
+          <div class="cards-list">
+            <a class="card" href="#">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=Путь+к+счастью" alt="Постер фильма" class="card-img" />
+              <span class="card-icon">🎥</span>
+              <div class="card-title">Путь к счастью</div>
+              <div class="card-desc">Вдохновляющий фильм о поиске смысла жизни и гармонии.</div>
+            </a>
+            <a class="card" href="#">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=Внутри+вне" alt="Постер мультфильма" class="card-img" />
+              <span class="card-icon">🎞️</span>
+              <div class="card-title">Головоломка</div>
+              <div class="card-desc">Анимация о чувствах и важности принятия себя.</div>
+            </a>
+            <a class="card" href="#">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=В+поисках+счастья" alt="Постер фильма" class="card-img" />
+              <span class="card-icon">🎬</span>
+              <div class="card-title">В погоне за счастьем</div>
+              <div class="card-desc">Реальная история преодоления трудностей и веры в себя.</div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Советуем прослушать -->
+        <section class="cards-section" id="recommended-listen">
+          <h2 class="section-heading">Советуем прослушать</h2>
+          <div class="cards-list">
+            <a class="card" href="#">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=Медитация" alt="Обложка аудио" class="card-img" />
+              <span class="card-icon">🎧</span>
+              <div class="card-title">Медитация счастья</div>
+              <div class="card-desc">Расслабьтесь и найдите гармонию с собой.</div>
+            </a>
+            <a class="card" href="#">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=Аудиокнига" alt="Обложка аудиокниги" class="card-img" />
+              <span class="card-icon">📖</span>
+              <div class="card-title">Притчи для души</div>
+              <div class="card-desc">Короткие истории для вдохновения каждый день.</div>
+            </a>
+            <a class="card" href="#">
+              <img src="https://via.placeholder.com/240x120/FFD66B/FFFFFF?text=Лекция" alt="Обложка лекции" class="card-img" />
+              <span class="card-icon">🎤</span>
+              <div class="card-title">Лекция о счастье</div>
+              <div class="card-desc">Психолог рассказывает о привычках счастливых людей.</div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Тематические подборки -->
+        <section class="cards-section" id="categories">
+          <h2 class="section-heading">Книги и статьи по темам</h2>
+          <div class="cards-list">
+            <a class="card" href="#">
+              <span class="card-icon">🧘‍♂️</span>
+              <div class="card-title">Саморазвитие</div>
+              <div class="card-desc">Подборка книг и статей для личного роста.</div>
+            </a>
+            <a class="card" href="#">
+              <span class="card-icon">💞</span>
+              <div class="card-title">Любовь и отношения</div>
+              <div class="card-desc">О любви, семье и гармонии в отношениях.</div>
+            </a>
+            <a class="card" href="#">
+              <span class="card-icon">🌱</span>
+              <div class="card-title">Психология</div>
+              <div class="card-desc">Лучшие материалы по психологии счастья.</div>
+            </a>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Счастье рядом. Все права защищены.</p>
+  </footer>
+</body>
+</html>

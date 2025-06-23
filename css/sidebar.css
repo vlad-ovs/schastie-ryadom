@@ -1,0 +1,83 @@
+/* =========================
+   САЙДБАР
+   ========================= */
+
+.sidebar {
+  background: #fffbea;
+  border-radius: 18px;
+  padding: 32px 20px 24px 20px;
+  box-shadow: 0 2px 16px rgba(240,210,90,0.12);
+  min-width: 220px;
+  max-width: 260px;
+  margin-top: 32px;
+  /* главное: отодвигаем от края, если вдруг что — убери этот margin-left, если используешь .library-container */
+  /* margin-left: 16px;  -- обычно не нужен, если есть общий контейнер */
+}
+
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: #f7b801;
+  letter-spacing: 1px;
+}
+
+.sidebar-menu ul,
+.sidebar-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu ul li,
+.sidebar-block ul li {
+  margin-bottom: 8px;
+}
+
+.sidebar-menu ul li a,
+.sidebar-block ul li a {
+  color: #2674c7;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 4px 6px;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-menu ul li a:hover,
+.sidebar-block ul li a:hover {
+  background: #fff4cc;
+  color: #1561a6;
+}
+
+.sidebar-icon {
+  width: 1.35em;
+  height: 1.35em;
+  min-width: 1.35em;
+  min-height: 1.35em;
+  max-width: 1.7em;
+  max-height: 1.7em;
+  vertical-align: middle;
+  display: inline-block;
+  fill: currentColor;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.sidebar-block {
+  border-top: 1px solid #f7e5a1;
+  padding-top: 14px;
+  margin-top: 22px;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    margin: 16px 0 0 0;
+    border-radius: 12px;
+    padding: 16px 7px 12px 7px;
+  }
+}
