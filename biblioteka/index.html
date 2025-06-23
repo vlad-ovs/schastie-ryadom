@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Библиотека рекомендаций</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Подключение глобального шрифта (если нужно) -->
+  <link rel="stylesheet" href="/css/global-font.css">
+  <!-- Подключение стилей карточек -->
+  <link rel="stylesheet" href="/css/recommend-card-responsive.css">
+</head>
+<body>
+  <div class="recommend-cards-container">
+    <div class="recommend-card">
+      <img class="recommend-cover" src="cover1.jpg" alt="Обложка книги">
+      <div class="recommend-title">Огонь в сердце</div>
+      <div class="recommend-author">— Дипак Чопра</div>
+      <div class="recommend-rating" data-rating="4"></div>
+      <div class="recommend-description">
+        Очень добрая, светлая и мудрая книга о человеческой душе...
+      </div>
+      <div class="recommend-duration">
+        ⏱ 420 страниц
+      </div>
+      <div class="recommend-tags">
+        <span class="tag">#ДуховноеРазвитие</span>
+        <span class="tag">#Счастье</span>
+      </div>
+      <div class="recommend-actions">
+        <button class="read">Читать</button>
+        <button class="download">Скачать</button>
+        <button class="buy">Купить</button>
+        <button class="add-list">В список</button>
+      </div>
+    </div>
+    <div class="recommend-card">
+      <img class="recommend-cover" src="cover2.jpg" alt="Постер фильма">
+      <div class="recommend-title">Путь к счастью</div>
+      <div class="recommend-author">— реж. Иван Иванов</div>
+      <div class="recommend-rating" data-rating="5"></div>
+      <div class="recommend-description">
+        Вдохновляющий фильм о поиске смысла жизни и гармонии.
+      </div>
+      <div class="recommend-duration">
+        ⏱ 1 ч 40 мин
+      </div>
+      <div class="recommend-tags">
+        <span class="tag">#Фильм</span>
+        <span class="tag">#Мотивация</span>
+      </div>
+      <div class="recommend-actions">
+        <button class="watch">Смотреть</button>
+        <button class="add-list">В список</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Скрипт для динамического рейтинга -->
+  <script>
+    document.querySelectorAll('.recommend-rating').forEach(el => {
+      const rating = Number(el.dataset.rating) || 0;
+      let stars = '';
+      for (let i = 1; i <= 5; i++) {
+        stars += i <= rating ? '★' : '☆';
+      }
+      el.textContent = stars;
+    });
+  </script>
+</body>
+</html>

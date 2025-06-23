@@ -17,6 +17,8 @@
 <link rel="stylesheet" href="/css/typography-adaptive.css">
 <link rel="stylesheet" href="/css/biblioteka.css">
 <link rel="stylesheet" href="/css/sidebar.css">
+<link rel="stylesheet" href="/css/global-font.css">
+<link rel="stylesheet" href="/css/recommend-card-responsive.css">
   <!-- VK Open API для виджета комментариев -->
   <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
   <script type="text/javascript">
